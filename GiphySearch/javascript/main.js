@@ -20,7 +20,7 @@ document.querySelector(".js-userinput").addEventListener('keyup',function(){
 /* 2. do the data stuff with API */
 function searchResults(searchWord){
     var url = "https://api.giphy.com/v1/gifs/search?api_key=MoMcjF7hJtPXiJBSdf6cJ8kezTWMPyAd&q=" + searchWord;
-    var GiphyAJAXCall = new XMLHttpRequest();
+    var GiphyAJAXCall = new XMLHttpsRequest();
     GiphyAJAXCall.open( 'GET', url );
     GiphyAJAXCall.send();
     
